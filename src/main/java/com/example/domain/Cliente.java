@@ -1,13 +1,15 @@
 package com.example.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
 public class Cliente {
 	@Id
+	@GeneratedValue
 	private Integer id;
-	private String nome;
+	private String nome = "joao";
 	private String telefone;
 	public Integer getId() {
 		return id;

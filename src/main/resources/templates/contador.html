@@ -1,0 +1,10 @@
+<html>
+<body>
+	<div th:each="dado : ${dados}">
+		<h1 th:text="${dado.qtd}"></h1>
+		<a th:href="@{/dado(id=${dado.id})}"> incremeta dado <span
+			th:text="${dado.id}"></span>
+		</a>
+	</div>
+</body>
+</html>
